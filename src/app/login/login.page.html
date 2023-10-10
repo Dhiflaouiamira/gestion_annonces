@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>ImmoPlus</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -16,15 +16,18 @@
       <form (ngSubmit)="onSubmit()">
        
         <ion-item>
-          <ion-label position="stacked">Email</ion-label>
-          <ion-input type="email" [(ngModel)]="formData.email" name="email" required></ion-input>
+          <ion-input placeholder="email" type="email" ></ion-input>
         </ion-item>
+        <br>
         <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input type="password" [(ngModel)]="formData.password" name="password" required></ion-input>
+          <ion-input placeholder="Password" type="password" ></ion-input>
         </ion-item>
-        <ion-button (click)="navigateTo()" type="submit" expand="full">Sign Up</ion-button>
+        <br>
+        <ion-button (click)="LogMeIn()" type="submit" expand="full">Login</ion-button>
       </form>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/home"></ion-back-button>
+      </ion-buttons>
     </ion-card-content>
   </ion-card>
 </ion-content>

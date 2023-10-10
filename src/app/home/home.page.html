@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title > gestionnaire des annonces </ion-title>
-<ion-button (click)="navigateToLogin()" fill="outline">Login</ion-button>
-<ion-button (click)="navigateToSignup()" fill="outline">Signup</ion-button> 
+    <ion-title > ImmoPlus </ion-title>
 
 
   </ion-toolbar>
@@ -11,11 +9,27 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-  
+    <ion-card>
+      <img alt="Silhouette of mountains" src="assets/first.jpeg" />
+      <ion-card-header>
+        
+     
+      </ion-card-header>
+    
+      <ion-card-content>
+        Découvrez notre agence immobilière . Trouvez la propriété qui reflète votre style de vie    </ion-card-content>
+    </ion-card>
+    <div>
+      <ion-button (click)="navigateToLogin()" fill="outline">Login</ion-button>
+     
+    </div>
+        <div>
+          <ion-button (click)="navigateToSignup()" fill="outline">Signup</ion-button>  
+        </div> 
   </div>
 </ion-content>
